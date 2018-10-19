@@ -23,6 +23,10 @@ module.exports = {
   rules: {
     // allow async-await
     'generator-star-spacing': 'off',
+    // 禁止空格和 tab 的混合缩进
+    // 'no-mixed-spaces-and-tabs': 0,
+    // 缩进
+    // 'indent': [1,2],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
