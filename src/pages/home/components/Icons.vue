@@ -76,11 +76,11 @@ export default {
 <style lang="stylus" scoped>
   @import '~styles/variable.styl'
   @import '~styles/mixins.styl'
-  .icons
-    overflow: hidden;
-    width: 100%
+  .icons >>> swiper-container
     height: 0
     padding-bottom: 50%
+  .icons
+    margin-top: .1rem
     .icon
       overflow: hidden
       position: relative
@@ -108,6 +108,6 @@ export default {
         text-align: center
         height: .44rem
         line-height: .44rem
+        color: $darkTextColor
         ellipsis()
-        // background: $darkTextColor
 </style>
