@@ -29,7 +29,11 @@ export default {
   @import '~styles/variable.styl'
   .header
     display: flex
+<<<<<<< HEAD
     line-height: $headerHeight
+=======
+    line-height: .86rem
+>>>>>>> 540f929886b4232852740e524f92395b912cce05
     background: $bgColor
     color: #fff
     .header-left
@@ -52,7 +56,10 @@ export default {
       width: 1.28rem
       float: right
       text-align: center
+<<<<<<< HEAD
       color: #fff
+=======
+>>>>>>> 540f929886b4232852740e524f92395b912cce05
       .arrow-icon
         margin-left: -.04rem
         font-size: 0.24rem
