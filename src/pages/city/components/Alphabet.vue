@@ -35,6 +35,8 @@ export default {
     }
   },
   updated () {
+    //通过offsetTop获取A字母在父标签ul中的纵坐标
+    //在计算属性中计算是为了避免每次滑动时都获取一次坐标值
     this.startY = this.$refs['A'][0].offsetTop
   },
   methods: {
@@ -46,6 +48,8 @@ export default {
     },
     handleTouchMove: function (e) {
       if (this.touchStatus) {
+        //函数节流，16ms后再执行计算操作
+        //如果在这16ms之间又有了新的滑动，清空timer重新计算
         if (this.timer) {
           clearTimeout(this.timer)
         }
