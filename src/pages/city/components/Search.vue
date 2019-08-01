@@ -13,7 +13,7 @@
         >
           {{item.name}}
         </li>
-        <li class="search-item border-bottom" v-show="keyword">没有找到数据</li>
+        <li class="search-item border-bottom" v-show="!keyword">没有找到数据</li>
       </ul>
     </div>
   </div>
